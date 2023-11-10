@@ -19,9 +19,9 @@ void loop() {
   float distancia = sonar.ping_cm();
   float porcentagem = (1.0 - (distancia/10)) * 100.0;
   if (porcentagem >= 70.00)  {
-    statuscheio = true;
-  } else {
     statuscheio = false;
+  } else {
+    statuscheio = true;
   }
 
   if (statuscheio) {
